@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main(){
+	
+	
+	float num1, num2, res;
+	int op;
+	
+	  printf("Escolha um numero:\n");
+	  scanf("%f",&num1);
+	  printf("Escolha outro numero:\n");
+	  scanf("%f",&num2);
+	  printf("Escolha a operacao: \n 1 - adicao: \n 2 - multiplicacao: \n 3 - subtracao: \n 4 - divisao: \n");
+	  scanf("%d", &op);
+	  
+	  switch(op)
+	  {
+	  	case 1:
+	  		res = num1 + num2;
+	  		printf("O resultado e = %2.f", res);
+	  		break;
+	  	case 2:
+	  		res = num1 - num2;
+	  		printf("O resultado e = %2.f", res);
+	  		break;
+	  	case 3:
+	  		res = num1 * num2;
+	  		printf("O resultado e = %2.f", res);
+	  		break;
+	  	case 4:
+	  		res = num1 / num2;
+	  		printf("O resultado e = %2.f", res);
+	  		break;
+	    defalt:
+	    	printf("Opcao invalida\n");
+	    	break;
+	    	
+	return 0;
+	  }
+}
